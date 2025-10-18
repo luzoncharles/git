@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St. Vincent De Ferrer College Camarin</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #6a0dad; /* Deep Purple */
+      --accent: #b57edc;  /* Light Purple */
+      --bg: #ffffff;      /* White */
+      --text: #2c2c2c;
+    }
+
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+      border: 3px solid #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 0;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(50px) scale(0.98);
+      transition: all 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+      filter: blur(8px);
+    }
+
+    section.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p, ul, ol {
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(106, 13, 173, 0.6), rgba(106, 13, 173, 0.6)),
+      url('https://source.unsplash.com/featured/?university,students') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1rem;
+      opacity: 1 !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .hero h2 {
+      color: #fff;
+      font-size: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #8e5bc7;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .alt {
+      background: #f8f5ff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-top: 1.5rem;
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .alt:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/St._Vincent_de_Ferrer_College_of_Camarin_logo.png" alt="SVDFC Logo">
+    <h1>St. Vincent De Ferrer College Camarin</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#admissions" class="nav-link">Admissions</a></li>
+        <li><a href="#registrar" class="nav-link">Registrar</a></li>
+        <li><a href="#jobs" class="nav-link">Jobs</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero active">
+    <h2>Forming Minds. Building Futures.</h2>
+    <p>Empowering students to lead with wisdom, integrity, and service.</p>
+    <a href="#admissions" class="btn">Apply Now</a>
+  </section>
+
+  <section class="alt" id="welcome">
+    <h2>Welcome to SVDFC</h2>
+    <p>St. Vincent De Ferrer College Camarin is a Catholic educational institution committed to academic excellence and holistic formation. We strive to nurture students with strong values, intellectual growth, and social responsibility.</p>
+  </section>
+
+  <section id="admissions">
+    <h2>Admissions</h2>
+    <div class="alt">
+      <h3>Requirements</h3>
+      <ul>
+        <li>Completed Application Form</li>
+        <li>High School Card or Transcript</li>
+        <li>Good Moral Certificate</li>
+        <li>2x2 ID Picture (2 pcs)</li>
+      </ul>
+
+      <h3>Enrollment Steps</h3>
+      <ol>
+        <li>Visit the Admissions or Registrar’s Office.</li>
+        <li>Submit all required documents.</li>
+        <li>Settle enrollment fees.</li>
+        <li>Claim your official schedule and student ID.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="registrar">
+    <h2>Registrar</h2>
+    <div class="alt">
+      <p>The Registrar’s Office provides academic record management and documentation services. Students and alumni may request certified copies of records and certifications here.</p>
+      <h3>Services Offered</h3>
+      <ul>
+        <li>Transcript of Records</li>
+        <li>Certificate of Enrollment</li>
+        <li>Diploma Requests</li>
+        <li>Document Authentication</li>
+      </ul>
+      <h3>Office Hours</h3>
+      <p>Monday - Friday: 8:00 AM to 5:00 PM</p>
+    </div>
+  </section>
+
+  <section id="jobs">
+    <h2>Job Opportunities</h2>
+    <div class="alt">
+      <p>Join our growing team of educators and professionals who are passionate about nurturing the next generation of leaders.</p>
+      <ul>
+        <li>College Instructor (IT, Education)</li>
+        <li>Registrar Assistant</li>
+        <li>Guidance Counselor</li>
+      </ul>
+      <p>Send your resume to <strong>hr@svdfc.edu.ph</strong></p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="alt">
+      <h3>Mission</h3>
+      <p>To provide quality Catholic education rooted in excellence, values, and community service.</p>
+      <h3>Vision</h3>
+      <p>A Christ-centered institution that forms competent and compassionate individuals dedicated to nation-building.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="alt">
+      <p>For inquiries, please contact us through the following SMART numbers:</p>
+      <ul>
+        <li>SMART 0968-729-2593</li>
+        <li>SMART 0969-597-2577</li>
+        <li>SMART 0908-658-1680</li>
+        <li>SMART 0969-597-2586</li>
+      </ul>
+      <p>Or email us at <strong>info@svdfc.edu.ph</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 St. Vincent De Ferrer College Camarin | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    // Smooth transition effect when clicking nav links
+    navLinks.forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href");
+        document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    // Fade-slide animation when scrolling
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        }
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
