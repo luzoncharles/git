@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark gray text */
+    line-height: 1.6;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #007bff; /* Primary blue color */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #007bff; /* Primary blue */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #f8f9fa; /* Light gray on hover */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e9ecef; /* Light gray background */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #495057; /* Slightly darker gray */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #28a745; /* Green CTA button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Content Section */
+section.content {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section.content h2 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff; /* Add a border under the heading */
+    padding-bottom: 0.5rem;
+}
+
+section.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.content li {
+    margin-bottom: 0.5rem;
+}
